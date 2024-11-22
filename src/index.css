@@ -1,0 +1,20 @@
+.app{
+  background: linear-gradient(267deg, #FEA837, #593E67); 
+}
+.home{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+}
+.home{
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #FEA837, #593E67);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home:hover{
+  transform: scale(1.05)
+}

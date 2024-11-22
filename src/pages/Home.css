@@ -1,0 +1,21 @@
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.profile_img{
+    margin-top: 150px;
+}
+.home h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+.home h1 span{
+    background: linear-gradient(267deg, #FEA837, #593E67);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
