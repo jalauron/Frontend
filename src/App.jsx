@@ -51,7 +51,7 @@ function App() {
 
         {/* Welcome Message */}
         <div>
-          <h1>Welcome to My Website</h1>
+          <h1>Hi! Welcome to My Website</h1>
           <p>
             This is the main content area. Use the navigation bar to explore different sections.
           </p>
