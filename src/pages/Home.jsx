@@ -20,7 +20,7 @@ function Home() {
     >
       {/* Centered Round Photo with Hover Effect */}
       <img
-        src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/452217871_1744725593021997_5564417717404322641_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGAZhk3IciyobhuWrpr-tlGj2pLLlvB8D6PaksuW8HwPrCX0EI5ktfqMzTQcon4nLACRFPpuoh85kHl71nO2KiU&_nc_ohc=TEgHzDhUmOgQ7kNvgFQalY0&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=A5wHPkVPgGWPReMVGDMvthR&oh=00_AYD1GVISROfktQMg-2eOdZoYbHPuUIEsJuoUgRz2s-ZKXQ&oe=6744669F"
+        src="https://web.facebook.com/photo/?fbid=1744725596355330&set=a.120363328791573"
         alt="Profile"
         style={{
           width: '300px',
