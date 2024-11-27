@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Ensure Bootstrap is imported
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function TopNav() {
   const location = useLocation();
-  const navigate = useNavigate();  // For programmatic navigation
   const [isOpen, setIsOpen] = useState(false);  // To handle the collapse state on mobile
-
-  // Redirect to homepage on refresh
-  useEffect(() => {
-    if (window.location.pathname !== '/') {
-      navigate('/'); // Navigate to the homepage
-    }
-  }, [navigate]);
 
   // Scroll to the top whenever the component is mounted
   useEffect(() => {
@@ -33,7 +25,7 @@ function TopNav() {
       case '/contact':
         return 'linear-gradient(167deg, #232f49 5%, #374256 47%, #b2192b 100%, #541b2e 100%)';
       default:
-        return '#1a1b36'; // Default color
+        return '#1a1b36'; // Default color 
     }
   };
 
@@ -63,35 +55,34 @@ function TopNav() {
               className={`btn ${location.pathname === '/' ? 'btn-primary active' : 'btn-light'}`}
               style={{
                 background: location.pathname === '/' ? getGradientForPage('/') : 'transparent',
-                color: location.pathname === '/' ? '#fff' : '#000',
+                color: location.pathname === '/' ? '#fff' : '#000',  // Change text to white when active
                 fontSize: '1.1rem',
                 fontWeight: '600',
                 borderRadius: '30px',
                 transition: 'background 0.3s ease, transform 0.2s ease, color 0.3s ease',
               }}
-              onClick={handleNavLinkClick}
-              onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
-              onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+              onClick={handleNavLinkClick}  // Collapse navbar on click
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}  // On hover: slightly increase the size
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // On mouse leave: revert to normal size
             >
               Home
             </Nav.Link>
 
-            {/* Other navigation links */}
             <Nav.Link
               as={Link}
               to="/about"
               className={`btn ${location.pathname === '/about' ? 'btn-secondary active' : 'btn-light'}`}
               style={{
                 background: location.pathname === '/about' ? getGradientForPage('/about') : 'transparent',
-                color: location.pathname === '/about' ? '#fff' : '#000',
+                color: location.pathname === '/about' ? '#fff' : '#000',  // Change text to white when active
                 fontSize: '1.1rem',
                 fontWeight: '600',
                 borderRadius: '30px',
                 transition: 'background 0.3s ease, transform 0.2s ease, color 0.3s ease',
               }}
-              onClick={handleNavLinkClick}
-              onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
-              onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+              onClick={handleNavLinkClick}  // Collapse navbar on click
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}  // On hover: slightly increase the size
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // On mouse leave: revert to normal size
             >
               About
             </Nav.Link>
@@ -102,15 +93,15 @@ function TopNav() {
               className={`btn ${location.pathname === '/education' ? 'btn-success active' : 'btn-light'}`}
               style={{
                 background: location.pathname === '/education' ? getGradientForPage('/education') : 'transparent',
-                color: location.pathname === '/education' ? '#fff' : '#000',
+                color: location.pathname === '/education' ? '#fff' : '#000',  // Change text to white when active
                 fontSize: '1.1rem',
                 fontWeight: '600',
                 borderRadius: '30px',
                 transition: 'background 0.3s ease, transform 0.2s ease, color 0.3s ease',
               }}
-              onClick={handleNavLinkClick}
-              onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
-              onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+              onClick={handleNavLinkClick}  // Collapse navbar on click
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}  // On hover: slightly increase the size
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // On mouse leave: revert to normal size
             >
               Education
             </Nav.Link>
@@ -121,15 +112,15 @@ function TopNav() {
               className={`btn ${location.pathname === '/hobbies' ? 'btn-danger active' : 'btn-light'}`}
               style={{
                 background: location.pathname === '/hobbies' ? getGradientForPage('/hobbies') : 'transparent',
-                color: location.pathname === '/hobbies' ? '#fff' : '#000',
+                color: location.pathname === '/hobbies' ? '#fff' : '#000',  // Change text to white when active
                 fontSize: '1.1rem',
                 fontWeight: '600',
                 borderRadius: '30px',
                 transition: 'background 0.3s ease, transform 0.2s ease, color 0.3s ease',
               }}
-              onClick={handleNavLinkClick}
-              onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
-              onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+              onClick={handleNavLinkClick}  // Collapse navbar on click
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}  // On hover: slightly increase the size
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // On mouse leave: revert to normal size
             >
               Hobbies
             </Nav.Link>
@@ -140,15 +131,15 @@ function TopNav() {
               className={`btn ${location.pathname === '/contact' ? 'btn-warning active' : 'btn-light'}`}
               style={{
                 background: location.pathname === '/contact' ? getGradientForPage('/contact') : 'transparent',
-                color: location.pathname === '/contact' ? '#fff' : '#000',
+                color: location.pathname === '/contact' ? '#fff' : '#000',  // Change text to white when active
                 fontSize: '1.1rem',
                 fontWeight: '600',
                 borderRadius: '30px',
                 transition: 'background 0.3s ease, transform 0.2s ease, color 0.3s ease',
               }}
-              onClick={handleNavLinkClick}
-              onMouseEnter={(e) => (e.target.style.transform = 'scale(1.05)')}
-              onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+              onClick={handleNavLinkClick}  // Collapse navbar on click
+              onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}  // On hover: slightly increase the size
+              onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // On mouse leave: revert to normal size
             >
               Contact
             </Nav.Link>
