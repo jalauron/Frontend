@@ -25,7 +25,7 @@ function TopNav() {
       case '/contact':
         return 'linear-gradient(167deg, #232f49 5%, #374256 47%, #b2192b 100%, #541b2e 100%)';
       default:
-        return '#1a1b36'; // Default color if not on any specific page
+        return '#1a1b36'; // Default color 
     }
   };
 

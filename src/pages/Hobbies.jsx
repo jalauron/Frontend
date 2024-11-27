@@ -22,7 +22,7 @@ function Hobbies() {
       style={{
         padding: '40px 20px',
         textAlign: 'center',
-        background: 'linear-gradient(137deg, #213239 10%, #616e6d 30%, #c77b63 50%, #ba2d15, #3f1c10)',
+        background: 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)',
         minHeight: '100vh',
       }}
     >
