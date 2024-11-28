@@ -77,7 +77,7 @@ function About() {
               overflow: 'hidden',
               boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
               padding: '20px',
-              width: '300px',
+              width: '270px',
               textAlign: 'center',
               transition: 'transform 0.3s, box-shadow 0.3s',
               cursor: 'pointer',
@@ -90,7 +90,7 @@ function About() {
               const description = e.currentTarget.querySelector('.description');
               if (description) {
                 description.style.opacity = '1';
-                description.style.maxHeight = '200px'; // Expand description height
+                description.style.maxHeight = '350px'; // Expand description height
               }
             }}
             onMouseLeave={(e) => {

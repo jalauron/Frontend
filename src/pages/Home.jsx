@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ako2 from './ako2.png';  // Import the new image
 
 function Home() {
   return (
@@ -18,34 +19,12 @@ function Home() {
         fontFamily: "'Poppins', sans-serif",
       }}
     >
-      {/* Centered Round Photo with Hover Effect */}
-      <img
-        src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/452217871_1744725593021997_5564417717404322641_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGAZhk3IciyobhuWrpr-tlGj2pLLlvB8D6PaksuW8HwPrCX0EI5ktfqMzTQcon4nLACRFPpuoh85kHl71nO2KiU&_nc_ohc=UYGSUn5F4csQ7kNvgH8Isv-&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=A5Hu8zYEsVJdvMDZbScAqqG&oh=00_AYAjETEpiGrAvGOJ8zny4qAV3AmHC5VTsMQtIDefQXtg9A&oe=674CF85F"
-        alt="Profile"
-        style={{
-          width: '300px',
-          height: '300px',
-          borderRadius: '50%',
-          objectFit: 'cover', // Ensures the image fits within the circle
-          marginBottom: '20px',
-          transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)';
-          e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1)';
-          e.currentTarget.style.boxShadow = 'none';
-        }}
-      />
-
       {/* Welcome Message */}
       <div>
-        <h1 style={{ fontSize: '2.5rem'}}>Hi! I'm Jai</h1>
-        <h2>Welcome to My Website. </h2>
+        <h1 style={{ fontSize: '2.5rem' }}>Hi! I'm Jai</h1>
+        <h2>Welcome to My Website.</h2>
         <p>
-        This is the main content area. Use the navigation bar to explore different sections.
+          This is the main content area. Use the navigation bar to explore different sections.
         </p>
       </div>
 
@@ -75,6 +54,29 @@ function Home() {
       >
         Get in Touch
       </Link>
+
+      {/* Centered Photo Below the Text */}
+      <img
+        src={ako2}  // Use the newly imported image here
+        alt="Profile"
+        style={{
+          width: '80%',  // Make the image width responsive based on the screen size
+          maxWidth: '600px',  // Max width for larger screens
+          height: 'auto',  // Maintain aspect ratio
+          objectFit: 'cover', // Ensures the image fits correctly
+          marginTop: '30px',  // Adds space between text and image
+          transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+          filter: 'contrast(1.2) brightness(1.1)', // Enhances contrast and brightness
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'scale(1.1)';
+          e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'scale(1)';
+          e.currentTarget.style.boxShadow = 'none';
+        }}
+      />
     </div>
   );
 }
