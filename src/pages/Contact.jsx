@@ -7,7 +7,7 @@ function Contact() {
       style={{
         padding: '20px',
         textAlign: 'center',
-        background: 'linear-gradient(167deg, #232f49 5%, #374256 47%, #b2192b 100%, #541b2e 100%)',
+        background: 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
@@ -18,7 +18,7 @@ function Contact() {
     >
       <h1
         style={{
-          fontSize: '4em',
+          fontSize: '3em',
           marginBottom: '20px',
           fontFamily: '"Roboto", sans-serif',
           fontWeight: '900',

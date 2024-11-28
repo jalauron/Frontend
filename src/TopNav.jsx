@@ -15,15 +15,15 @@ function TopNav() {
   const getGradientForPage = (path) => {
     switch (path) {
       case '/':
-        return 'linear-gradient(167deg, #082d33 30%, #0b6e74 90%, #0f8f98 100%, #6b9cba 100%, #2a4d63 100%)';
+        return 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)';
       case '/about':
-        return 'linear-gradient(135deg, #1a1b36, #42164b, #622347, #a54055)';
+        return 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)';
       case '/education':
-        return 'linear-gradient(137deg, #213239 10%, #616e6d 30%, #c77b63 50%, #ba2d15, #3f1c10)';
+        return 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)';
       case '/hobbies':
         return 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)';
       case '/contact':
-        return 'linear-gradient(167deg, #232f49 5%, #374256 47%, #b2192b 100%, #541b2e 100%)';
+        return 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)';
       default:
         return '#1a1b36'; // Default color 
     }

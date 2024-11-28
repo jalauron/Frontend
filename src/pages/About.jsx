@@ -43,7 +43,7 @@ function About() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        background: 'linear-gradient(135deg, #1a1b36, #42164b, #622347, #a54055)',
+        background: 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)',
       }}
     >
       {/* Title Section */}

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div
-      style={{
+      style={{ 
         textAlign: 'center',
         color: '#fff',
         padding: '40px 20px',
-        background: 'linear-gradient(167deg, #082d33 30%, #0b6e74 90%, #0f8f98 100%, #6b9cba 100%, #2a4d63 100%)',
+        background: 'linear-gradient(135deg, #180018, #2a114b, #522959, #824d69)',
         height: 'calc(100vh - 1px)', // Fix for potential scrolling
         display: 'flex',
         flexDirection: 'column',
