@@ -14,12 +14,12 @@ function App() {
       <Router>
         <TopNav />
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Education" element={<Education />} />
-          <Route path="/Hobbies" element={<Hobbies />} />
-          <Route path="/Contact" element={<Contact />} />
+        <Route path="/" component={<Home />} />
+          <Route path="/Home" component={<Home />} />
+          <Route path="/About" component={<About />} />
+          <Route path="/Education" component={<Education />} />
+          <Route path="/Hobbies" component={<Hobbies />} />
+          <Route path="/Contact" component={<Contact />} />
         </Routes>
       </Router>
     </div>
