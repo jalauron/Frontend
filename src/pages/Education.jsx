@@ -72,7 +72,7 @@ function Education() {
               borderRadius: '12px',
               overflow: 'hidden',
               boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
-              padding: '20px',
+              padding: '30px',
               width: '300px', // Set a fixed width for the cards
               textAlign: 'center',
               transition: 'transform 0.3s, box-shadow 0.3s',
